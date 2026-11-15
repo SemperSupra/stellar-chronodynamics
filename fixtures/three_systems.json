@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1",
+  "synthetic": true,
+  "epoch_start_gyr": 0,
+  "epoch_end_gyr": 4,
+  "step_gyr": 0.05,
+  "systems": [
+    {
+      "id": "SYNTHETIC-A",
+      "luminosity_track": [
+        {
+          "epoch_gyr": 0,
+          "luminosity_solar": 0.7
+        },
+        {
+          "epoch_gyr": 4,
+          "luminosity_solar": 1.5
+        }
+      ],
+      "planets": [
+        {
+          "id": "A-1",
+          "semi_major_axis_au": 1,
+          "flux_min": 0.35,
+          "flux_max": 1.1
+        }
+      ]
+    },
+    {
+      "id": "SYNTHETIC-B",
+      "luminosity_track": [
+        {
+          "epoch_gyr": 0,
+          "luminosity_solar": 0.4
+        },
+        {
+          "epoch_gyr": 4,
+          "luminosity_solar": 0.8
+        }
+      ],
+      "planets": [
+        {
+          "id": "B-1",
+          "semi_major_axis_au": 0.85,
+          "flux_min": 0.35,
+          "flux_max": 1.1
+        }
+      ]
+    },
+    {
+      "id": "SYNTHETIC-C",
+      "luminosity_track": [
+        {
+          "epoch_gyr": 0,
+          "luminosity_solar": 0.08
+        },
+        {
+          "epoch_gyr": 4,
+          "luminosity_solar": 0.22
+        }
+      ],
+      "planets": [
+        {
+          "id": "C-1",
+          "semi_major_axis_au": 0.45,
+          "flux_min": 0.35,
+          "flux_max": 1.1
+        }
+      ]
+    }
+  ]
+}

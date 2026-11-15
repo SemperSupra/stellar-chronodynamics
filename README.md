@@ -1,7 +1,17 @@
 # Stellar Chronodynamics
+Public, standalone, science-anchored procedural worldbuilding bake-off. Unpublished story scenarios are isolated in SemperSupra/stellar-chronodynamics-private.
 
-Standalone, science-anchored procedural worldbuilding bake-off.
+## Run
+Requires Go 1.22+.
 
-This public repository contains only open astronomical data, synthetic fixtures, reusable scientific adapters, code and public qualification evidence. Unpublished worldbuilding scenarios belong in `SemperSupra/stellar-chronodynamics-private` and must not be published here without explicit authorization.
+1. go test ./...
+2. go test -race ./...
+3. go vet ./...
+4. go run ./cmd/bakeoff -input fixtures/three_systems.json -out .local/experiment
 
-Status: **BOOTSTRAPPING**. The initial Go harness tests deterministic synthetic overlap semantics only; it is not scientific validation of exoplanet habitability.
+## Evidence status
+M0 runs a deliberately SYNTHETIC toy stellar flux model to qualify temporal overlap semantics and deterministic execution. It does not establish that a real planet is habitable or inhabited.
+
+Work plan and execution authority: https://github.com/SemperSupra/stellar-chronodynamics/issues/1
+
+Science candidates: NASA Exoplanet Archive TAP, HZ_evolution, VPLanet, REBOUND, QuantHab. No upstream scientific model qualified yet.
